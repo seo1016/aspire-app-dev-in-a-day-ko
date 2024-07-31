@@ -1,7 +1,5 @@
 var builder = DistributedApplication.CreateBuilder(args);
-
 var cache = builder.AddRedis("cache");
-
 var config = builder.Configuration;
 
 var apiapp = builder.AddProject<Projects.AspireYouTubeSummariser_ApiApp>("apiapp")
